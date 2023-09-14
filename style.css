@@ -1,0 +1,26 @@
+ .gradient{
+    background: linear-gradient(127deg, #000000, #150050, #3f0071, #323232);
+    background-size: 800% 800%;
+
+    animation: AnimationName 15s ease infinite;
+}
+
+@keyframes AnimationName {
+    0%{background-position:0% 32%}
+    50%{background-position:100% 69%}
+    100%{background-position:0% 32%}
+}
+
+
+@import url('https://fonts.googleapis.com/css2?family=Antic+Didone&display=swap');
+
+.font{
+    font-family: 'Antic Didone', serif;
+}
+
+.padding-left{
+    padding-left: 1rem;
+}
+
+
+
