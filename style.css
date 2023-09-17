@@ -73,3 +73,12 @@
     padding-left: 50%;
     padding-right: 50%;
 }
+
+.github_font{
+    padding-left: 10px;
+    font-size: 25px;
+}
+
+.hyperlink{
+    color: black;
+}
