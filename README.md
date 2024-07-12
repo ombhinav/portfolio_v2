@@ -62,7 +62,7 @@ This project is open source and available under the [MIT License](LICENSE).
 ## Contact
 
 - LinkedIn: [@abhinavgarg0077](https://www.linkedin.com/in/abhinavgarg0077/)
-- Email: [Email](abhinavgarg0077@gmail.com)
+- Email: [@abhinavgarg0077@gmail.com]()
 - GitHub: [@ombhinav](https://github.com/ombhinav)
 
 Project Link: [https://github.com/ombhinav/portfolio_v2](https://github.com/ombhinav/portfolio_v2)
