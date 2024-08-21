@@ -19,7 +19,6 @@ Visit my portfolio at: [https://abhinavgarg.vercel.app/](https://abhinavgarg.ver
 - HTML5
 - CSS3
 - Bootstrap 5
-- JavaScript (for minor interactions)
 
 ## Installation and Local Development
 
@@ -34,7 +33,7 @@ To run this project locally, follow these steps:
 or
 `start index.html`  # on Windows
 
-3. To make changes, edit the HTML, CSS, or JavaScript files as needed
+3. To make changes, edit the HTML, CSS
 
 4. Refresh your browser to see the changes
 
