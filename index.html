@@ -6,48 +6,119 @@
     <title>Abhinav Garg | Portfolio</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="stylesheet" href="./style.css">
-    <link rel="icon" type="image/x-icon" href="./images/icon_final.png" >
+    <link rel="icon" type="image/x-icon" href="./images/icon_final.png">
+    <!-- AOS animation library -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 
-
+<body>
     <div class="container">
-        <header class="d-flex flex-wrap justify-content-center py-3 mb-4 ">
+        <header class="d-flex flex-wrap justify-content-center py-3 mb-4">
           <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
-            
-            <span class="fs-4  font padding-left">ABHINAV GARG </span>
+            <span class="fs-4 font padding-left">ABHINAV GARG</span>
           </a>
     
           <ul class="nav nav-pills">
-            <li class="nav-item"><a href="#home" class="fs-4 nav-link text-black font " aria-current="page">HOME</a></li>
+            <li class="nav-item"><a href="#home" class="fs-4 nav-link text-black font" aria-current="page">HOME</a></li>
             <li class="nav-item"><a href="#skills" class="fs-4 nav-link text-black font">SKILLS</a></li>
+            <li class="nav-item"><a href="#experience" class="fs-4 nav-link text-black font">EXPERIENCE</a></li>
             <li class="nav-item"><a href="#projects" class="fs-4 nav-link text-black font">PROJECTS</a></li>
+            <li class="nav-item"><a href="#resume" class="fs-4 nav-link text-black font">RESUME</a></li>
             <li class="nav-item"><a href="#connect" class="fs-4 nav-link text-black font">CONNECT</a></li>
-            
           </ul>
         </header>
-        
-        
-        
-        
       </div> 
-      
-      
       
       <section id="home">
         <div class="container col-xxl-8 px-4 py-5">
           <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
             <div class="col-10 col-sm-8 col-lg-6">
-              <img src="./images/t_(35).jpg" class="rot circular" height="500" >
+              <img src="./images/t_(35).jpg" class="rot circular" height="500" data-aos="zoom-in">
             </div>
-            <div class="col-lg-6 text-white ">
+            <div class="col-lg-6 text-white" data-aos="fade-right" data-aos-delay="300">
               <h1 class="display-5 fw-bold lh-1 mb-3 text-black font-normal">I'm <span class="font">abhinav</span>,</h1>
-              <h1 class="text-black font"> Namaste:</h1>
+              <h1 class="text-black font" id="typing-text"></h1>
               <p class="lead text-black">A Software Developer,<br>"Whitespace whisperer, minimalist dreams."
               </p>
               <div class="d-grid gap-2 d-md-flex justify-content-md-start pt-2">
-                <a href="#skills"><button type="button" class="btn btn-success btn-lg px-4 me-md-2 ">Skills <span class="font">(kaushala)</span></button></a>
+                <a href="#skills"><button type="button" class="btn btn-success btn-lg px-4 me-md-2 btn-hover-effect">Skills <span class="font">(kaushala)</span></button></a>
                 <a href="#projects"><button type="button" class="btn btn-outline-danger btn-lg px-4 button-no-hover">Projects <span class="font">(pariyojna)</span></button></a>
               </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <div class="scroll-progress"></div>
+      <section id="skills">
+         <div class="container pt-5 mt-4">
+           <div class="padding-b-skills padding-left font-normal display-2 mb-5" data-aos="fade-up"><span class="font">Skills:</span></div>
+           
+           <ul class="d-flex flex-wrap justify-content-around py-3 mb-4 nav" data-aos="fade-up" data-aos-delay="100">
+             <li class="nav-item skill-icon"><img src="./images/html.png" height="80"></li>
+             <li class="nav-item skill-icon"><img src="./images/css.png" height="80"></li>
+             <li class="nav-item skill-icon"><img src="./images/javascript-736400_640.png" height="80"></li>
+             <li class="nav-item skill-icon"><img src="./images/bootstrap-logo.svg" height="80"></li>
+             <li class="nav-item skill-icon"><img src="./images/cpp.png" height="80"></li>
+             <li class="nav-item skill-icon"><img src="./images/python.png" height="80"></li>
+             <li class="nav-item skill-icon"><img src="./images/java.png" height="80"></li>
+             <li class="nav-item skill-icon"><img src="./images/git.png" height="80"></li>
+             <li class="nav-item skill-icon"><img src="./images/MySQL-Logo.png" height="80"></li>
+             <li class="nav-item skill-icon"><img src="./images/photoshop.png" height="80"></li>
+           </ul>
+           <ul class="d-flex flex-wrap justify-content-around py-3 mb-4 nav" data-aos="fade-up" data-aos-delay="200">
+             <li class="nav-item skill-icon"><img src="./images/react.png" height="90"></li>
+             <li class="nav-item skill-icon"><img src="./images/node.png" height="100"></li>
+             <li class="nav-item skill-icon"><img src="./images/express.png" height="80" width="350"></li>
+             <li class="nav-item skill-icon"><img src="./images/tailwind.png" height="80"></li>
+             <li class="nav-item skill-icon"><img src="./images/mongo.png" height="80"></li>
+             <li class="nav-item skill-icon"><img src="./images/extension.png" height="80"></li>
+           </ul>
+          </div>
+      </section> 
+      
+      <!-- Experience Section -->
+      <section id="experience">
+        <div class="container pt-5 mt-4">
+          <div class="padding-b-skills padding-left font-normal display-2 mb-5" data-aos="fade-up"><span class="font">Experience:</span></div>
+          
+          <div class="padding-left" data-aos="fade-up" data-aos-delay="100">
+            <div class="timeline">
+              <table class="table align-middle mb-0 bg-white">
+                <thead class="bg-light">
+                  <tr>
+                    <th>Company</th>
+                    <th>Position / Duration</th>
+                    <th>Responsibilities</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr class="timeline-item">
+                    <td>
+                      <div class="d-flex align-items-center">
+                        <div class="ms-3">
+                          <p class="fw-bold mb-1">Jurident, ValsoTech Ltd.</p>
+                          <p class="text-muted mb-0">Vellore, India</p>
+                        </div>
+                      </div>
+                    </td>
+                    <td>
+                      <p class="fw-normal mb-1">Frontend Developer Intern</p>
+                      <p class="text-muted mb-0">Jan '24 - Mar '24</p>
+                    </td>
+                    <td>
+                      <ul>
+                        <li>Built a responsive admin portal and dashboard using React.js and Tailwind CSS</li>
+                        <li>Implemented a mobile-first design approach, optimizing the user interface for different screen sizes<br> and improving the portal’s
+                          accessibility across devices.</li>
+                        <li>Collaborated closely with cross-functional teams, adhering to Agile and Scrum frameworks, to gather <br> user feedback and refine
+                          the admin portal</li>
+                      </ul>
+                    </td>
+                  </tr>
+                  
+                  
+                </tbody>
+              </table>
             </div>
           </div>
         </div>
@@ -55,30 +126,24 @@
       
       <!-- Projects -->
       <section id="projects">
-        
-        <div class="container">
-          
-          <div class="padding-b-skills padding-left font-normal display-2 mb-5"><span class="font">Projects:</span></div>
-          <div class="padding-left">
+        <div class="container pt-5 mt-4">
+          <div class="padding-b-skills padding-left font-normal display-2 mb-5" data-aos="fade-up"><span class="font">Projects:</span></div>
+          <div class="padding-left" data-aos="fade-up" data-aos-delay="100">
             <table class="table align-middle mb-0 bg-white">
               <thead class="bg-light">
                 <tr>
                   <th>Name</th>
                   <th>Title / Tech Stack</th>
                   <th>Status</th>
-                  
                 </tr>
               </thead>
               <tbody>
-                
-                <tr>
+                <tr class="project-item">
                   <td>
                     <div class="d-flex align-items-center">
-                      
                       <div class="ms-3">
                         <p class="fw-bold mb-1">SheetFlow</p>
                         <a href="https://github.com/ombhinav/SheetFlow" class="text-decoration-none hyperlink" target="_blank"><p class="text-muted mb-0">GitHub</p></a>
-                        <!-- <a href="https://ombhinav.github.io/modern_teams/" class="text-decoration-none hyperlink" target="_blank"><p class="text-muted mb-0">Live View</p></a> -->
                       </div>
                     </div>
                   </td>
@@ -86,14 +151,11 @@
                     <p class="fw-normal mb-1">Real-Time Data Synchronization Tool for Google Sheets and SQL</p>
                     <p class="text-muted mb-0">Node.Js, SQL, Google Sheets API, App Script</p>
                   </td>
-                  
                   <td>Completed</td>
-                  
                 </tr>
-                <tr>
+                <tr class="project-item">
                   <td>
                     <div class="d-flex align-items-center">
-                      
                       <div class="ms-3">
                         <p class="fw-bold mb-1">URLify URL Shortner</p>
                         <a href="https://github.com/ombhinav/urlify" class="text-decoration-none hyperlink" target="_blank"><p class="text-muted mb-0">GitHub</p></a>
@@ -105,19 +167,14 @@
                     <p class="fw-normal mb-1">MERN Stack application to shorten long URLs </p>
                     <p class="text-muted mb-0">MERN (MongoDB, Express.js, React.js, Node.js) </p>
                   </td>
-                  
                   <td>Completed</td>
-                  
                 </tr>
-                
-                <tr>
+                <tr class="project-item">
                   <td>
                     <div class="d-flex align-items-center">
-                      
                       <div class="ms-3">
                         <p class="fw-bold mb-1">AI Image Generator</p>
                         <a href="https://github.com/ombhinav/Stable_diffusion" class="text-decoration-none hyperlink" target="_blank"><p class="text-muted mb-0">GitHub</p></a>
-                        <!-- <a href="https://ombhinav.github.io/modern_teams/" class="text-decoration-none hyperlink" target="_blank"><p class="text-muted mb-0">Live View</p></a> -->
                       </div>
                     </div>
                   </td>
@@ -125,15 +182,11 @@
                     <p class="fw-normal mb-1">A generative AI project leveraging Stable Diffusion to create unique AI-generated images. </p>
                     <p class="text-muted mb-0">Stable Diffusion Model, Python, Gradio, Google Colab</p>
                   </td>
-                  
                   <td>Completed</td>
-                  
                 </tr>
-                
-                <tr>
+                <tr class="project-item">
                   <td>
                     <div class="d-flex align-items-center">
-                      
                       <div class="ms-3">
                         <p class="fw-bold mb-1">Modern Bank UI</p>
                         <a href="https://github.com/ombhinav/bank_app" class="text-decoration-none hyperlink" target="_blank"><p class="text-muted mb-0">GitHub</p></a>
@@ -145,18 +198,14 @@
                     <p class="fw-normal mb-1">Modern Bank UI Webpage</p>
                     <p class="text-muted mb-0">React.js & Tailwind CSS</p>
                   </td>
-                  
                   <td>Completed</td>
-                  
                 </tr>
-                <tr>
+                <tr class="project-item">
                   <td>
                     <div class="d-flex align-items-center">
-                      
                       <div class="ms-3">
                         <p class="fw-bold mb-1">GitaGems Chrome Extension</p>
                         <a href="https://github.com/ombhinav/Gita_ChromeExtension" class="text-decoration-none hyperlink" target="_blank"><p class="text-muted mb-0">GitHub</p></a>
-                        <!-- <a href="https://ombhinav.github.io/portfolio_v2/" class="text-decoration-none hyperlink" target="_blank"><p class="text-muted mb-0">Live View</p></a> -->
                       </div>
                     </div>
                   </td>
@@ -164,18 +213,14 @@
                     <p class="fw-normal mb-1">An aesthetic Chrome Extension displaying Bhagavad Gita lessons on every new tab </p>
                     <p class="text-muted mb-0">HTML, CSS, DOM Manipulation, Event Listeners</p>
                   </td>
-                  
                   <td>Completed</td>
-                  
                 </tr>
-                <tr>
+                <tr class="project-item">
                   <td>
                     <div class="d-flex align-items-center">
-                      
                       <div class="ms-3">
                         <p class="fw-bold mb-1">Income_group_clustering</p>
                         <a href="https://github.com/ombhinav/K-Means_algo" class="text-decoration-none hyperlink" target="_blank"><p class="text-muted mb-0">GitHub</p></a>
-                        <!-- <a href="#" class="text-decoration-none"><p class="text-muted mb-0">Live View</p></a> -->
                       </div>
                     </div>
                   </td>
@@ -183,16 +228,11 @@
                     <p class="fw-normal mb-1">ML Algo Demo</p>
                     <p class="text-muted mb-0">Python, Scikit-learn & K-means Clustering</p>
                   </td>
-                  
                   <td>Completed</td>
-                  
                 </tr>
-                
-                
-                <tr>
+                <tr class="project-item">
                   <td>
                     <div class="d-flex align-items-center">
-                      
                       <div class="ms-3">
                         <p class="fw-bold mb-1">Modern_teams</p>
                         <a href="https://github.com/ombhinav/modern_teams" class="text-decoration-none hyperlink" target="_blank"><p class="text-muted mb-0">GitHub</p></a>
@@ -204,15 +244,11 @@
                     <p class="fw-normal mb-1">Business Mock-up Webpage</p>
                     <p class="text-muted mb-0">HTML & CSS</p>
                   </td>
-                  
                   <td>Completed</td>
-                  
                 </tr>
-                
-                <tr>
+                <tr class="project-item">
                   <td>
                     <div class="d-flex align-items-center">
-                      
                       <div class="ms-3">
                         <p class="fw-bold mb-1">Portfolio_v1</p>
                         <a href="https://github.com/ombhinav/Porfolio" class="text-decoration-none hyperlink" target="_blank"><p class="text-muted mb-0">GitHub</p></a>
@@ -224,80 +260,111 @@
                     <p class="fw-normal mb-1">My first ever personal webpage on internet :)</p>
                     <p class="text-muted mb-0">HTML & CSS</p>
                   </td>
-                  
                   <td>Completed</td>
-                  
                 </tr>
-                
               </tbody>
             </table>
           </div>
         </div>
       </section>
-        
-       <section id="skills">
-
-         <div class="container pt-5 mt-4">
-           <div class="padding-b-skills padding-left font-normal display-2 mb-5"><span class="font">Skills:</span></div>
-           
-           
-           <ul class=" d-flex flex-wrap justify-content-around  py-3 mb-4 nav">
-             <li class="nav-item"><img src="./images/html.png" height="80" ></li>
-             <li class="nav-item"><img src="./images/css.png" height="80" ></li>
-             <li class="nav-item"><img src="./images/javascript-736400_640.png" height="80" ></li>
-             <li class="nav-item"><img src="./images/bootstrap-logo.svg" height="80" ></li>
-             <li class="nav-item"><img src="./images/cpp.png" height="80" ></li>
-             <li class="nav-item"><img src="./images/python.png" height="80" ></li>
-             <li class="nav-item"><img src="./images/java.png" height="80" ></li>
-             <li class="nav-item"><img src="./images/git.png" height="80" ></li>
-             <li class="nav-item"><img src="./images/MySQL-Logo.png" height="80" ></li>
-             <li class="nav-item"><img src="./images/photoshop.png" height="80" ></li>
-           </ul>
-           <ul class=" d-flex flex-wrap justify-content-around  py-3 mb-4 nav">
-             <li class="nav-item"><img src="./images/react.png" height="90" ></li>
-             <li class="nav-item"><img src="./images/node.png" height="100" ></li>
-             <li class="nav-item"><img src="./images/express.png" height="80" width="350" ></li>
-             <li class="nav-item"><img src="./images/tailwind.png" height="80" ></li>
-             <li class="nav-item"><img src="./images/mongo.png" height="80" ></li>
-             <li class="nav-item"><img src="./images/extension.png" height="80" ></li>
-             <!-- <li class="nav-item"><img src="./images/java.png" height="80" ></li>
-             <li class="nav-item"><img src="./images/git.png" height="80" ></li>
-             <li class="nav-item"><img src="./images/MySQL-Logo.png" height="80" ></li>
-             <li class="nav-item"><img src="./images/photoshop.png" height="80" ></li> -->
-             <!-- <li class="nav-item"><a href="#" class="nav-link text-white font">About</a></li> -->
-            </ul>
+      
+      <!-- Resume Section -->
+      <section id="resume">
+        <div class="container pt-5 mt-4">
+          <div class="padding-b-skills padding-left font-normal display-2 mb-5" data-aos="fade-up"><span class="font">Resume:</span></div>
+          
+          <div class="row padding-left" data-aos="fade-up" data-aos-delay="100">
+            <div class="col-md-6">
+              <div class="card mb-4 shadow-sm">
+                <div class="card-body">
+                  <h3 class="card-title font-normal">Education</h3>
+                  <div class="mb-4">
+                    <h5 class="font-weight-bold">Bachelor of Technology in Computer Science</h5>
+                    <p class="mb-1">Vellore Institute of Technology</p>
+                    <p class="text-muted">2021 - 2025</p>
+                    <p>CGPA: 8.7/10</p>
+                  </div>
+                  
+                  <div class="mb-4">
+                    <h5 class="font-weight-bold">Senior Secondary Education</h5>
+                    <p class="mb-1">Seth Anandram Jaipuria School</p>
+                    <p class="text-muted">2020 - 2021</p>
+                    <p>Percentage: 94.4%</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            <div class="col-md-6">
+              <div class="card mb-4 shadow-sm">
+                <div class="card-body">
+                  <h3 class="card-title font-normal">Certifications</h3>
+                  <ul class="list-unstyled">
+                    <li class="mb-3">
+                      <h5 class="font-weight-bold">AWS Solution Architect Associate</h5>
+                      <p class="mb-1">Amazon</p>
+                      <p class="text-muted">Completed in 2024</p>
+                    </li>
+                    
+                    <li class="mb-3">
+                      <h5 class="font-weight-bold">AWS Cloud Practitioner</h5>
+                      <p class="mb-1">Amazon</p>
+                      <p class="text-muted">Completed in 2024</p>
+                    </li>
+                    
+                    <li class="mb-3">
+                      <h5 class="font-weight-bold">Web Development Bootcamp</h5>
+                      <p class="mb-1">Udemy</p>
+                      <p class="text-muted">Completed in 2023</p>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            
+            <div class="col-12 text-center mt-4 mb-5">
+              <a href="./images/material/abhinav_r.pdf" class="btn btn-purple  btn-lg download-btn" target="_blank">
+                <span class="font">Download Resume</span> 
+              </a>
+            </div>
           </div>
-      </section> 
-    
-         
+        </div>
+      </section>
         
-
-    <section id="connect">
-
-      <div class="container">
-        
-        <div class="padding-b-skills padding-left font-normal display-2 mb-5 mt-5"><span class="font">Connect:</span></div>
-        
-        <div class="padding-b-skills padding-left mb-5 font">
-          <img src="./images/github.svg" height="60"> <a href="https://github.com/ombhinav" target="_blank" class="text-decoration-none hyperlink" ><span class="github_font"> &ensp; GitHub</span> </a>
-        </div> 
-        
-        <div class="padding-b-skills padding-left font mb-5">
-          <img src="./images/linkedin.svg" height="60"> <a href="https://linkedin.com/in/abhinavgarg0077" target="_blank" class="text-decoration-none hyperlink" ><span class="github_font"> &ensp; LinkedIn</span> </a> 
-        </div> 
-        
-        
-        
-        
-      </div>
-    </section>
+      <section id="connect">
+        <div class="container">
+          <div class="padding-b-skills padding-left font-normal display-2 mb-5 mt-5" data-aos="fade-up"><span class="font">Connect:</span></div>
+          
+          <div class="padding-b-skills padding-left mb-5 font" data-aos="fade-up" data-aos-delay="100">
+            <img src="./images/github.svg" height="60" class="social-icon"> 
+            <a href="https://github.com/ombhinav" target="_blank" class="text-decoration-none hyperlink">
+              <span class="github_font"> &ensp; GitHub</span>
+            </a>
+          </div> 
+          
+          <div class="padding-b-skills padding-left font mb-5" data-aos="fade-up" data-aos-delay="200">
+            <img src="./images/linkedin.svg" height="60" class="social-icon"> 
+            <a href="https://linkedin.com/in/abhinavgarg0077" target="_blank" class="text-decoration-none hyperlink">
+              <span class="github_font"> &ensp; LinkedIn</span>
+            </a> 
+          </div> 
+          
+          <div class="padding-b-skills padding-left font mb-5" data-aos="fade-up" data-aos-delay="300">
+            <img src="./images/globe.png" height="60" class="social-icon"> 
+            <a href="mailto:abhinav.garg@example.com" class="text-decoration-none hyperlink">
+              <span class="github_font"> &ensp; abhinavgarg0077@gmail.com</span>
+            </a> 
+          </div>
+        </div>
+      </section>
       
       <div class="container">
         <img src="./images/border_bootom (1) (1).png" height="255" class="border_bottom">
       </div>
       
-      
-      
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+     
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+      <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+      <script src="./script.js"></script>
 </body>
 </html>

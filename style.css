@@ -1,88 +1,233 @@
- .gradient{
+.gradient {
     background: linear-gradient(127deg, #000000, #150050, #3f0071, #323232);
     background-size: 800% 800%;
-
     animation: AnimationName 15s ease infinite;
 }
-
 @keyframes AnimationName {
     0%{background-position:0% 32%}
     50%{background-position:100% 69%}
     100%{background-position:0% 32%}
 }
 
-
 @import url('https://fonts.googleapis.com/css2?family=Antic+Didone&display=swap');
-
 @font-face {
     font-family: 'Samarkan Normal';
     font-style: normal;
     font-weight: normal;
     src: local('Samarkan Normal'), url('SAMARN__.woff') format('woff');
-    }
+}
     
-
-    @font-face {
+@font-face {
     font-family: 'Samarkan Oblique';
     font-style: normal;
     font-weight: normal;
     src: local('Samarkan Oblique'), url('SAMARO__.woff') format('woff');
-    }
+}
 
-.font{
+.font {
     font-family: 'Samarkan Oblique';
     /* font-family: 'Antic Didone', serif; */
 }
 
-.font-normal{
+.font-normal {
     font-family: 'Antic Didone', serif;
 }
 
-.padding-left{
+.padding-left {
     padding-left: 1rem;
 }
 
-
-
-.circular{
+.circular {
     display: cir;
 }
 
 .rot {
-   
     border-radius: 50%;
-    -webkit-animation:spin 75s linear infinite;
-    -moz-animation:spin 75s linear infinite;
-    animation:spin 75s linear infinite;
+    -webkit-animation: spin 75s linear infinite;
+    -moz-animation: spin 75s linear infinite;
+    animation: spin 75s linear infinite;
 }
 
 @-moz-keyframes spin { 100% { -moz-transform: rotate(360deg); } }
 @-webkit-keyframes spin { 100% { -webkit-transform: rotate(360deg); } }
 @keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } }
 
-.button-no-hover:hover{
+.button-no-hover:hover {
     color: white !important;
 }
 
-
-.padding-b-skills{
+.padding-b-skills {
     padding-left: 24px;
 }
 
-.padding-left-right-icons{
+.padding-left-right-icons {
     padding-left: 50%;
     padding-right: 50%;
 }
 
-.github_font{
+.github_font {
     padding-left: 10px;
     font-size: 25px;
 }
 
-.hyperlink{
+.hyperlink {
     color: black;
 }
 
-.border_bottom{
+.border_bottom {
     width: 100%;
+}
+
+
+.nav-link {
+    position: relative;
+    transition: all 0.3s ease;
+}
+
+.nav-link::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #000;
+    transition: all 0.3s ease;
+}
+
+.nav-link:hover::after {
+    width: 100%;
+}
+
+/* Button hover effects */
+.btn-hover-effect {
+    transition: all 0.3s ease;
+}
+
+.btn-hover-effect:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.btn-purple{
+    background: linear-gradient(
+        to bottom,
+        #9792ef,
+        #8a5cf6
+    );
+    border: none;
+}
+
+/* Timeline styling */
+.timeline-item {
+    transition: all 0.3s ease;
+}
+
+.timeline-item:hover {
+    background-color: #f8f9fa;
+    transform: translateX(5px);
+}
+
+/* Project items hover effect */
+.project-item {
+    transition: all 0.3s ease;
+}
+
+.project-item:hover {
+    background-color: #f8f9fa;
+    transform: translateX(5px);
+}
+
+/* Skill icons hover effect */
+.skill-icon {
+    transition: all 0.3s ease;
+    padding: 10px;
+    margin: 5px;
+}
+
+.skill-icon:hover {
+    transform: scale(1.1);
+}
+
+/* Social icons hover effect */
+.social-icon {
+    transition: all 0.3s ease;
+}
+
+.social-icon:hover {
+    transform: scale(1.05) scale(1.1);
+}
+
+/* Download button animation */
+.download-btn {
+    position: relative;
+    transition: all 0.3s ease;
+    overflow: hidden;
+}
+
+.download-btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.download-btn::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+    transition: all 0.6s ease;
+}
+
+.download-btn:hover::before {
+    left: 100%;
+}
+
+/* Typing text cursor */
+#typing-text {
+    border-right: 3px solid black;
+    padding-right: 5px;
+    animation: cursor-blink 1s infinite;
+    display: inline-block; 
+    height: 1.5em; 
+    line-height: 1.5em; 
+    overflow: hidden; 
+}
+
+
+@keyframes cursor-blink {
+    0%, 100% { border-color: transparent; }
+    50% { border-color: black; }
+}
+
+.scroll-progress {
+    position: fixed;
+    top: 50%; /* Center vertically */
+    right: 20px; /* Separated from right edge by 20px */
+    height: 0%;
+    width: 10px;
+    /* max-height: 00px; Fixed maximum height to make it shorter */
+    background: linear-gradient(
+        to bottom,
+        #4f46e5,
+        #8b5cf6
+    );
+    z-index: 9999;
+    border-radius: 3px;
+    box-shadow: 0 0 10px rgba(79, 70, 229, 0.5);
+    transition: height 0.3s ease-out;
+    transform: translateY(-50%); /* Centers it precisely based on its own height */
+}
+
+/* Pulse animation */
+@keyframes pulse {
+    0% { opacity: 0.8; }
+    50% { opacity: 1; }
+    100% { opacity: 0.8; }
+}
+
+.scroll-progress {
+    animation: pulse 2s infinite;
 }
