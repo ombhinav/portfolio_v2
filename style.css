@@ -26,7 +26,7 @@
 
 .font {
     font-family: 'Samarkan Oblique';
-    /* font-family: 'Antic Didone', serif; */
+    
 }
 
 .font-normal {
@@ -38,7 +38,7 @@
 }
 
 .circular {
-    display: cir;
+    display: inline-block;
 }
 
 .rot {
